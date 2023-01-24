@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    background-color: white;
+}
+
+.home {
+    height: 100vh;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+li {
+    list-style: none;
+    display: inline;
+    font-weight: 600;
+    color: black;
+    margin: 0 1.5rem;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+.img {
+    width: 40vw;
+}
+
+img {
+    width: 100%;
+}
+
+
+
+.title {
+    font-size: 4rem;
+}
+
+.title2 {
+    font-size: 4rem;
+    margin-bottom: 6rem;
+}
+
+.About {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5rem 10rem;
+}
+
+.profile {
+    height: 250px;
+    width: 200px;
+    background-color: red;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 10rem;
+}
+
+.description {
+    width: 300px;
+    height: 180px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 0 10rem;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15rem;
+}
+
+.gmail {
+    border-bottom: 2px solid white;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.social {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 4rem;
+    row-gap: 4rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1400px) {
+    .title {
+        font-size: 4rem;
+        margin-right: 6rem;
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10rem;
+    }
+
+    .profile {
+        margin-right: 10rem;
+    }
+
+    .About {
+        align-items: center;
+    }
+
+    .info {
+        justify-content: center;
+    }
+    .footer {
+        padding: 0 20rem;
+    }
+}
+@media screen and (max-width: 1400px) {
+
+    .info {
+        justify-content: center;
+    }
+    .profile{
+        margin-right: 100px;
+    }
+   
+}
+@media screen and (max-width: 1200px) {
+    .footer {
+        padding: 0 6rem;
+    }
+    .profile{
+        margin-right: 100px;
+    }
+    .About{
+        padding: 5rem 10rem;
+    }
+}
+@media screen and (max-width: 968px) {
+    .footer {
+        padding: 0 6rem;
+    }
+    .About{
+        padding: 5rem 5rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    header{
+        height: 50px;
+    }
+    nav{
+        padding: 1.2rem 2rem;
+    }
+    ul{
+        visibility: hidden;
+    }
+    .profile{
+        margin-right: 0;
+    }
+    .home{
+        display: grid;
+        grid-template-rows: 100px 100px;
+        place-items: center;
+        padding: 0;
+        justify-content: center;
+        align-content: center;
+        row-gap: 10rem;
+    }
+    .img{
+        width: 300px;
+        height: 200px;
+        
+    }
+    .title{
+        font-size: 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        order: 2;
+    }
+   
+    .footer {
+        padding: 0 6rem;
+        justify-content: center;
+    }
+    .info{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .profile{
+        margin-bottom: 0rem;
+        transform: scale(.6);
+    }
+    .title2{
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: 8rem;
+    }
+    .About{
+        
+        padding: 1rem 5rem;
+        justify-content: center;
+    }
+    .content{
+        flex-direction: column;
+        order: 3;
+        margin-top: 0;
+    }
+    .social{
+        grid-template-columns: auto;
+        row-gap: .4rem;
+        font-size: .7rem;
+        order: -1;
+    }
+    .email{
+        font-size: .7rem;
+    }
+    .gmail{
+        font-size: .838rem;
+    }
+}
